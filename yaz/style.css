@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;1600
+	box-sizing: border-box;
+}
+
+body {
+	background: #000;
+	color: #000;
+	font-size: 62.5%;
+	font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #54ca90;
+	text-decoration: none;
+}
+
+/*========================
+ * HEADER
+ ============================*/
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+    margin-right: 49%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+	width: 100%;
+	padding: 15px;
+	height: 120px;
+	vertical-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+	display: inline-block;
+	color: #a7a5a5;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	color: black;
+}
+  
+/* Add a color to the active/current link */
+.topnav a.active {
+	color: #000;
+}
+
+/*========================
+ * CONTENT
+ ============================*/
+.content-wrapper {
+	background: #fff;
+	width: 1400px;
+	margin: 0 auto;
+}
+.pricing-table-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 2.6em;
+	color: #FFF;
+	margin-top: 15px;
+	text-align: left;
+	margin-bottom: 25px;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table-title a {
+	font-size: 0.6em;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	height: 0;
+	width: 0;
+	clear: both;
+}
+
+.hero-pricing {
+	padding: 50px;
+	height: 350px;
+	background-image: url('./assets/hero-pricing.jpg');
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+.hero-pricing::before {
+	display: block;
+	content: '';
+	width: 20%;
+	height: 5px;
+	background: #fff;
+	margin: 20px auto;
+}
+.btn {
+	display: block;
+	padding: 15px;
+	border-radius: 25px;
+	font-size: 20px;
+	border: none;
+}
+.btn.get-started {
+	/* to center get-started button */
+	margin: 20px auto;
+	background: #000;
+	color: #fff;
+}
+
+.pricing-wrapper {
+	width: 960px;
+	margin: 40px auto 0;
+}
+.pricing-wrapper .column,
+.q-and-a .column {
+    width: 49%;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pricing-table {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	-webkit-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+}
+
+.pricing-table:hover {
+	-webkit-transform: scale(1.06);
+	-ms-transform: scale(1.06);
+	-o-transform: scale(1.06);
+	transform: scale(1.06);
+}
+
+.pricing-title {
+	color: #FFF;
+	background: #000;
+	padding: 20px 0;
+	font-size: 2em;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+.pricing-title::after {
+	display: block;
+	content: '';
+	width: 50%;
+	height: 2px;
+	background: #fff;
+	margin: 10px auto;
+}
+
+.pricing-table .price {
+	background: #000;
+	color: #fff;
+	font-size: 3.4em;
+	font-weight: 700;
+	padding: 20px 0;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+.pricing-table .price sup {
+	font-size: 0.4em;
+	position: relative;
+	right: 5px;
+	color: #969696;
+}
+.pricing-table .price span {
+	font-size: 0.5em;
+	color: #969696;
+}
+.pricing-table .price .note {
+	font-size: 10px;
+	font-weight: normal;
+	font-style: italic;
+	color: #969696;
+}
+
+.table-list {
+	background: #FFF;
+	color: #403d3a;
+}
+
+.table-list li {
+	color: #adadad;
+	font-size: 1.3em;
+	padding: 12px 10px;
+	background-color: #f7f7f7;
+	border-color: #eaeaea;
+	border-bottom: 1px solid; 
+}
+
+.table-list li span {
+	color: #c8c8c8;
+}
+
+.table-list li span.unlimited {
+	color: #000;
+	font-weight: bold;
+}
+
+.table-list li span.free {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 0.5em;
+
+    -moz-border-radius: 30px; /* or 50% */
+    border-radius: 30px; /* or 50% */
+
+    background-color: #54ca90;
+    color: white;
+    text-align: center;
+}
+.q-and-a {
+	margin: 20px;
+	font-size: 1.5em;
+}
+.q-and-a p {
+	margin: 30px 0;
+	color: #8e8e8f;
+}
+.q-and-a span.question {
+	border-bottom: 1px solid #000;
+	padding-bottom: 3px;
+}
+ /*========================
+ * FOOTER
+ ============================*/
+
+.footer-wrapper {
+	font-size: 12px;
+	color: #fff;
+	width: 60%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.footer-wrapper ul {
+	margin: 20px auto;
+}
+.footer-wrapper li {
+	padding: 4px 0;
+}
+.footer-wrapper a {
+	color: #555555;
+}
+.footer-wrapper .column {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+	width: 23%;
+}
+.footer-wrapper .column:last-child {
+	padding-top: 0;
+}
+.footer-wrapper p {
+	font-size: 14px;
+	color: #8e8e8f;
+	margin: 15px 0;
+}
+.btn.try-free {
+	background: #fff;
+	color: #000;
+	font-size: 12px;
+	width: 80%;
+	font-weight: bold;
+}
+
+/* ================
+ * Responsive
+ ===================*/
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+ 	.pricing-wrapper {
+ 		width: 768px;
+ 	}
+
+ 	.pricing-table {
+ 		width: 236px;
+ 	}
+	
+	.table-list li {
+		font-size: 1.3em;
+	}
+
+ }
+
+ @media only screen and (max-width: 767px) {
+ 	.pricing-wrapper {
+ 		width: 420px;
+ 	}
+
+ 	.pricing-table {
+ 		display: block;
+ 		float: none;
+ 		margin: 0 0 20px 0;
+ 		width: 100%;
+ 	}
+ }
+
+@media only screen and (max-width: 479px) {
+	.pricing-wrapper {
+		width: 300px;
+	}
+}
